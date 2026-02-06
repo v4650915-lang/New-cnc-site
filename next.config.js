@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: 'standalone',
-  // basePath: '/fanuc-cnc-site', // Закомментировано для локальной разработки
+  output: 'export',
+  basePath: isProd ? '/New-cnc-site' : '',
   images: {
     unoptimized: true,
   },
