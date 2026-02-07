@@ -1,0 +1,29 @@
+services:
+  site:
+    build: ./site
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  app:
+    build: ./app
+    restart: always
+    ports:
+      - "3001:80"
+    environment:
+      - NODE_ENV=production
+
+  bot:
+    build: ./bot
+    restart: always
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - ADMIN_IDS=${ADMIN_IDS}
+      - DATABASE_URL=sqlite:///bot.db
+      - SUBSCRIPTION_PRICES=${SUBSCRIPTION_PRICES}
+      - SUBSCRIPTION_DAYS=${SUBSCRIPTION_DAYS}
+      - APP_URL=http://85.193.86.212:3001
+    volumes:
+      - ./bot/bot.db:/app/bot.db
