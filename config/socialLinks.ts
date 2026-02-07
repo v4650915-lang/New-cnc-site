@@ -2,7 +2,7 @@
  * Конфигурация ссылок и токенов для социальных сетей
  * 
  * ИНСТРУКЦИЯ ПО ЗАПОЛНЕНИЮ:
- * 1. Замените placeholder значения на реальные ссылки
+ * 1. Замените placeholder значения на realльные ссылки
  * 2. Для Telegram: используйте формат https://t.me/username или https://t.me/channel_name
  * 3. Для YouTube: используйте формат https://www.youtube.com/@channel или https://www.youtube.com/channel/CHANNEL_ID
  * 4. Для ВКонтакте: используйте формат https://vk.com/username или https://vk.com/public123456
@@ -43,4 +43,3 @@ export const getVKMessageUrl = (message: string): string => {
   const encodedMessage = encodeURIComponent(message);
   return `https://vk.com/share.php?url=${encodedMessage}`;
 };
-
