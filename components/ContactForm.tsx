@@ -11,8 +11,8 @@ export const ContactForm = () => {
   const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({ type: null, message: '' });
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Твои данные Telegram
-  const BOT_TOKEN = "8355909549:AAEBQrN4EgN_rh0gKPaQnw8y0dyuu2EZFXM";
+  // Данные Telegram бота FanucFeedbackBot для обратной связи
+  const BOT_TOKEN = "7664323861:AAECRQv2o7Klkgn3TgV0WjlanLUw7OdU6fk";
   const CHAT_ID = "1163474868";
 
   const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -13,7 +13,7 @@ export const socialLinksConfig = {
   telegram: {
     url: 'https://t.me/+Jj6Uy-wDMfk1NGIy', // Ссылка на группу "Токарная обработка ЧПУ"
     messageUrl: 'https://t.me/share/url?url=', // Для отправки сообщения через Telegram
-    botToken: '7664323861:AAEqI-Pn6axi-ABetTrlz4TPKIOm6LX9P3A', // Токен бота Telegram для получения сообщений из формы
+    botToken: '7664323861:AAECRQv2o7Klkgn3TgV0WjlanLUw7OdU6fk', // Токен бота FanucFeedbackBot
     chatId: '1163474868', // ID чата для отправки сообщений
   },
   youtube: {
