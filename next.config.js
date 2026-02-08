@@ -2,8 +2,8 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/New-cnc-site' : '',
+  // output: 'standalone',
+  // basePath: '/New-cnc-site', // Not needed for root domain/IP
   images: {
     unoptimized: true,
   },
