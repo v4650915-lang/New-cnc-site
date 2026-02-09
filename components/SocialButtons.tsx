@@ -63,7 +63,7 @@ export const SocialButtons = () => {
           title={social.name}
         >
           <div
-            className="flex items-center justify-center gap-2 px-5 py-2 md:gap-3 md:px-12 md:py-4 rounded-full transition-all duration-300 shadow-lg brushed-metal"
+            className="relative z-10 flex items-center justify-center gap-2 px-5 py-2 md:gap-3 md:px-12 md:py-4 rounded-full transition-all duration-300 shadow-lg brushed-metal"
             style={{
               backgroundColor: social.color,
               boxShadow: `0 0 15px ${social.color}40, 0 2px 4px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.2)`,

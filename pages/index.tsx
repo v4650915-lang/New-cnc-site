@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Конструктор ЧПУ 💾 | Обратная связь</title>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta
           name="description"
           content="Telegram-бот для программирования станков с ЧПУ. Расчёты, геометрия, G-код для Fanuc, Siemens, Haas. Форма обратной связи и предложений."
